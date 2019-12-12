@@ -9,3 +9,8 @@ verify_ssl = true
 
 [requires]
 python_version = "3.7"
+
+[scripts]
+start = "python main.py"
+test = "python -m unittest discover -v tests"
+format = "autopep8 -ivr ."
